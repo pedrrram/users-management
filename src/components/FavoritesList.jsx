@@ -18,9 +18,11 @@ const FavoritesList = () => {
       <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />
 
       {favorites.length === 0 ? (
-        <Alert severity="info">You haven't added any favorites yet.</Alert>
+        <Alert severity="info" color="secondary">
+          You haven't added any favorites yet.
+        </Alert>
       ) : filteredFavorites.length === 0 ? (
-        <Alert severity="info">
+        <Alert severity="info" color="secondary">
           No favorites found matching your search term!
         </Alert>
       ) : (
