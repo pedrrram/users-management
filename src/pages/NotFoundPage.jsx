@@ -1,4 +1,5 @@
 import { Box } from "@mui/material";
+import notFoundImage from "../assets/404.svg";
 
 const NotFound = () => {
   return (
@@ -11,11 +12,12 @@ const NotFound = () => {
       p={5}
     >
       <img
-        src="./src/assets/404.svg"
+        src={notFoundImage}
         style={{
           maxHeight: 600,
           maxWidth: 600,
         }}
+        alt="Not Found"
       />
     </Box>
   );
